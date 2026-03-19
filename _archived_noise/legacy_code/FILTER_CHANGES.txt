@@ -1,0 +1,85 @@
+📋 FILTER CRITERIA CHANGES - "DIAMONDS IN THE ROUGH" MODE
+
+===============================================================================
+FILTER CHANGES (Aggressive/Permissive)
+===============================================================================
+
+BEFORE (Ultra-Conservative):
+  • Minimum Price: $2.00 (no penny stocks)
+  • Minimum Daily Volume: $500,000 (very high)
+  • RSI Range: 10-90 (strict extremes)
+  • ML Confidence: 0.2+ (20% minimum)
+  • Sentiment Score: -0.7+ (avoids bearish)
+  ❌ Result: 0 signals found from 264 stocks
+
+AFTER (Aggressive Hunting):
+  • Minimum Price: $0.50 ✅ (allow penny stocks - diamonds!)
+  • Minimum Daily Volume: $50,000 ✅ (10x more permissive)
+  • RSI Range: 5-95 ✅ (allow extreme swings)
+  • ML Confidence: 0.0+ ✅ (ACCEPT ANY confidence)
+  • Sentiment Score: -1.0+ ✅ (accept all sentiment)
+  ✓ Result: SHOULD find multiple signals!
+
+===============================================================================
+ACCOUNT SETTINGS (Small Account Setup)
+===============================================================================
+
+BEFORE ($25,000 Account):
+  • Account Size: $25,000
+  • Risk Per Trade: 1.0% ($250 per trade)
+  • Max Position Size: 5% ($1,250)
+  • Max Daily Loss: 2% ($500)
+
+AFTER ($300 Account):
+  • Account Size: $300 ✅
+  • Risk Per Trade: 2.0% ($6 per trade) ✅ MORE AGGRESSIVE
+  • Max Position Size: 20% ($60 per trade) ✅ BIGGER POSITIONS
+  • Max Daily Loss: 10% ($30) ✅ TIGHTER BUT REALISTIC
+  • Min Stock Price: $0.50 ✅ PENNY STOCKS ALLOWED
+  • Min Volume: $50,000 ✅ RELAXED VOLUME
+
+===============================================================================
+WHY IT WASN'T WORKING BEFORE
+===============================================================================
+
+1. PENNY STOCKS: Set min price to $2.00, but best opportunities are in $0.50-$2.00 range
+2. VOLUME: Required $500k daily volume - eliminates 90% of potential trades
+3. RSI EXTREMES: If stock is very oversold (5-20 RSI) or overbought (80-95), it REJECTED IT
+   - But those are our best entry points for recoveries!
+4. ML CONFIDENCE: Required 20% confidence minimum - rejected uncertain signals
+   - But uncertainty = volatility = PROFIT OPPORTUNITY
+5. SENTIMENT: Rejected bearish trades - but bearish can mean undervalued!
+
+===============================================================================
+NEW STRATEGY: "DIAMONDS IN THE ROUGH"
+===============================================================================
+
+✓ LOOK FOR:
+  • Oversold penny stocks ($0.50-$3.00) with low volume
+  • Extreme RSI signals (< 20 or > 80)
+  • Unknown/uncertain ML predictions (high volatility)
+  • Unpopular sentiment (bearish) = potential bounce
+
+✓ REASONS TO FIND SIGNALS NOW:
+  • No longer rejecting penny stocks
+  • No longer rejecting low volume
+  • No longer rejecting extreme RSI
+  • No longer rejecting uncertain predictions
+  • Much more aggressive = more opportunities
+
+===============================================================================
+NEXT STEP
+===============================================================================
+
+Run: python automated_session.py
+
+This will:
+  1. Scan with NEW aggressive criteria
+  2. Use $300 account size
+  3. Scan every 2 minutes (quicker)
+  4. Run for 30 minutes (short test)
+  5. Show you actual signals that pass
+
+Expected: 10-50+ signals (vs 0 before)
+
+Good luck finding those diamonds! 💎

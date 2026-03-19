@@ -1,0 +1,3 @@
+﻿Core execution rule:
+- Only files inside /core_system/ are part of execution.
+- All new modules must be explicitly added to /core_system/ before use.
